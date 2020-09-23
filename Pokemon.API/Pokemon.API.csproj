@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.8" />
     <PackageReference Include="MongoDB.Driver" Version="2.11.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PokemonCore\Pokemon.Core.csproj" />
   </ItemGroup>
 
 

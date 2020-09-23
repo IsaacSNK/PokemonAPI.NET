@@ -15,7 +15,7 @@ namespace Pokemon.API.Services
         public PokemonService(PokemonDatabaseSettings settings, ILogger<PokemonService> logger)
         {
             this._logger = logger;
-            this._logger.LogError(settings.ToString());
+            
             var client = new MongoClient(new MongoClientSettings()
             {
                 Server = MongoServerAddress.Parse(settings.Server),
